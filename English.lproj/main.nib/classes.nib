@@ -12,8 +12,20 @@
             OUTLETS = {view = NSView; }; 
             SUPERCLASS = AMAction; 
         }, 
+        {
+            ACTIONS = {useVariable = id; }; 
+            CLASS = AMPopUpButton; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSPopUpButton; 
+        }, 
+        {CLASS = AMPopUpButtonCell; LANGUAGE = ObjC; SUPERCLASS = NSPopUpButtonCell; }, 
         {CLASS = AMShellScriptAction; LANGUAGE = ObjC; SUPERCLASS = AMBundleAction; }, 
-        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+        {CLASS = AMTokenField; LANGUAGE = ObjC; SUPERCLASS = NSTokenField; }, 
+        {CLASS = AMTokenFieldCell; LANGUAGE = ObjC; SUPERCLASS = NSTokenFieldCell; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }, 
+        {CLASS = NSTokenField; LANGUAGE = ObjC; SUPERCLASS = NSTextField; }, 
+        {CLASS = NSTokenFieldCell; LANGUAGE = ObjC; SUPERCLASS = NSTextFieldCell; }
     ); 
     IBVersion = 1; 
 }
